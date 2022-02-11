@@ -1,5 +1,6 @@
 package spring.core.discount;
 
+import org.springframework.stereotype.Component;
 import spring.core.member.Grade;
 import spring.core.member.Member;
 

@@ -5,10 +5,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import spring.core.member.Grade;
 import spring.core.member.Member;
 import spring.core.member.MemberService;
-import spring.core.member.MemberServicelmpl;
 import spring.core.order.Order;
 import spring.core.order.OrderService;
-import spring.core.order.OrderServicelmpl;
 
 public class OrderApp {
 

@@ -6,8 +6,9 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import spring.core.AppConfig;
 import spring.core.member.MemberRepository;
-import spring.core.member.MemberServicelmpl;
-import spring.core.order.OrderServicelmpl;
+import spring.core.member.MemberServiceImpl;
+import spring.core.member.MemberServiceImpl;
+import spring.core.order.OrderServiceImpl;
 
 public class ConfigurationSingletonTest {
 
@@ -15,8 +16,8 @@ public class ConfigurationSingletonTest {
     void configurationTest(){
         ApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
 
-        MemberServicelmpl memberService = ac.getBean("memberService", MemberServicelmpl.class);
-        OrderServicelmpl orderService = ac.getBean("orderService", OrderServicelmpl.class);
+        MemberServiceImpl memberService = ac.getBean("memberService", MemberServiceImpl.class);
+        OrderServiceImpl orderService = ac.getBean("orderService", OrderServiceImpl.class);
         MemberRepository memberRepository = ac.getBean("getRepository", MemberRepository.class);
 
         MemberRepository memberRepository1 = memberService.getMemberRepository();

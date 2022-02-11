@@ -7,7 +7,6 @@ import spring.core.AppConfig;
 import spring.core.member.Grade;
 import spring.core.member.Member;
 import spring.core.member.MemberService;
-import spring.core.member.MemberServicelmpl;
 
 public class OrderServiceTest {
 
